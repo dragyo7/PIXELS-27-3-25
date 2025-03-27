@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Content</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container result-container">
+        <h1>Your Generated Content</h1>
+        <p>{{ content }}</p>
+        <p class="word-count">Word count: {{ content.split()|length }}</p>
+        <div class="button-group">
+            <a href="/" class="btn btn-primary">Generate Another</a>
+            <a href="/clear" class="btn btn-secondary">Clear Memory</a>
+        </div>
+    </div>
+</body>
+</html>

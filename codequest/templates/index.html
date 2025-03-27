@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container input-container">
+        <h1>AI Content Generator</h1>
+        <form method="POST">
+            <label for="topic">Topic:</label><br>
+            <input type="text" id="topic" name="topic" placeholder="e.g., AI trends" required><br><br>
+            
+            <label for="audience">Audience:</label><br>
+            <input type="text" id="audience" name="audience" placeholder="e.g., millennials" required><br><br>
+            
+            <label for="tone">Tone:</label><br>
+            <select id="tone" name="tone">
+                <option value="casual">Casual</option>
+                <option value="formal">Formal</option>
+                <option value="funny">Funny</option>
+            </select><br><br>
+            
+            <input type="submit" value="Generate Content">
+        </form>
+    </div>
+</body>
+</html>
